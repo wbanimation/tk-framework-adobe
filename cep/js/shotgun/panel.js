@@ -8,6 +8,7 @@
 // agreement to the Shotgun Pipeline Toolkit Source Code License. All rights
 // not expressly granted therein are reserved by Shotgun Software Inc.
 
+
 "use strict";
 
 // namespace. not to be confused with the Shotgun Panel app.
@@ -230,6 +231,7 @@ sg_panel.Panel = new function() {
         // will be a no-op since the manager will already be running. For the
         // reload scenario, this is the jumpstart that the manager requires to
         // start up.
+        
         const event_type = "com.adobe.csxs.events.AppOnline";
         var event = new CSEvent(event_type, "APPLICATION");
         event.extensionId = _cs_interface.getExtensionID();
@@ -558,8 +560,10 @@ sg_panel.Panel = new function() {
             app_name = "Photoshop";
         } else if (_cs_interface.getApplicationID() == "AEFT") {
             app_name = "AfterEffects"
+        } else if (_cs_interface.getApplicationID() == "PPRO") {
+            app_name = "Premiere Pro"
         } else {
-            sg_logging.debug("Cannot make the app (un)persistent because the host application doesn't support it.");
+            sg_logging.debug("Cannot !! make the app (un)persistent because the host application doesn't support it.");
             return false;
         }
 
@@ -1006,7 +1010,7 @@ sg_panel.Panel = new function() {
 
     // Sets up all the event handling callbacks.
     const _setup_event_listeners = function() {
-
+    
         // Handle python process disconnected
         sg_manager.CRITICAL_ERROR.connect(
             function(event) {
