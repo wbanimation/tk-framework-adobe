@@ -59,6 +59,13 @@ sg_constants.product_info = {
         display_name: "Premiere Pro",
         tk_engine_name: "tk-premierepro",
         debug_url: "http://localhost:45219"
+    },
+
+    // Illustrator
+    ILST: {
+        display_name: "Illustrator",
+        tk_engine_name: "tk-illustratorcc",
+        debug_url: "http://localhost:45220"
     }
 
     // NOTE: the debug ports are defined in .debug file at the top level of the

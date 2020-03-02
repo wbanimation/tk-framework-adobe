@@ -562,6 +562,8 @@ sg_panel.Panel = new function() {
             app_name = "AfterEffects"
         } else if (_cs_interface.getApplicationID() == "PPRO") {
             app_name = "Premiere Pro"
+        } else if (_cs_interface.getApplicationID() == "ILST") {
+            app_name = "Illustrator"
         } else {
             sg_logging.debug("Cannot !! make the app (un)persistent because the host application doesn't support it.");
             return false;

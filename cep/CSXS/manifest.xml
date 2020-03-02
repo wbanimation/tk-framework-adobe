@@ -13,6 +13,7 @@
             <Host Name="AEFT" Version="14.0"/>
             <!-- Supporting more engines than Photoshop and After Effects can be done in this line -->
             <Host Name="PPRO" Version="11.0"/>
+            <Host Name="ILST" Version="21.0"/>
         </HostList>
         <LocaleList>
             <Locale Code="All"/>
