@@ -91,7 +91,7 @@ class AdobeBridge(Communicator):
         "SHOTGUN_ADOBE_RESPONSE_TIMEOUT",
         os.environ.get(
             "SGTK_PHOTOSHOP_TIMEOUT",
-            300.0,
+            900.0,
         ),
     )
     SHOTGUN_ADOBE_HEARTBEAT_TIMEOUT = os.environ.get(
